@@ -22,6 +22,11 @@ body{
     background-color: var(--cor-de-fundo);
 }
 
+a{
+    text-decoration: none;
+}
+
 @import "styles/header";
 @import "styles/banner";
 @import "styles/carrosel";
+@import "styles/card";

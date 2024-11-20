@@ -20,6 +20,10 @@ body {
   background-color: var(--cor-de-fundo);
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -148,4 +152,64 @@ body {
 }
 .swiper .swiper-pagination {
   position: initial;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--branco);
+  margin: 20px 24px;
+  padding: 16px 25px 25px 16px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card .conteudo {
+  display: flex;
+}
+.card .conteudo .left {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.card .conteudo .left h3 {
+  color: var(--laranja);
+  font-size: 16px;
+}
+.card .conteudo .left h2 {
+  font-size: 18px;
+  color: var(--azul);
+}
+.card .conteudo .left p {
+  font-size: 14px;
+  color: var(--azul);
+}
+.card .conteudo .right a {
+  background-color: var(--laranja);
+  color: var(--branco);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.card .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.card .buttons .fav-cart {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.card .buttons .fav-cart .favoritos,
+.card .buttons .fav-cart .sacola {
+  width: 32px;
+}
+.card .buttons .saiba-mais {
+  background-color: var(--laranja);
+  color: var(--branco);
+  text-align: center;
+  padding: 12px 35px;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
