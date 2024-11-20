@@ -24,9 +24,15 @@ body{
 
 a{
     text-decoration: none;
+    color: var(--branco)
+}
+
+li{
+    list-style: none;
 }
 
 @import "styles/header";
 @import "styles/banner";
 @import "styles/carrosel";
 @import "styles/card";
+@import "styles/topicos";

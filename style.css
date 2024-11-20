@@ -22,6 +22,11 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--branco);
+}
+
+li {
+  list-style: none;
 }
 
 .header {
@@ -211,5 +216,31 @@ a {
   color: var(--branco);
   text-align: center;
   padding: 12px 35px;
+  font-weight: 700;
+}
+
+.card-topicos {
+  background: var(--azul-degrade);
+  padding: 24px 0;
+}
+.card-topicos h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--branco);
+  text-align: center;
+}
+.card-topicos .topicos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-topicos .topicos ul li {
+  margin: 2em 0.5em;
+}
+.card-topicos .topicos ul li a {
+  color: var(--branco);
+  padding: 1em;
+  background-color: var(--laranja);
+  font-size: 16px;
   font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
