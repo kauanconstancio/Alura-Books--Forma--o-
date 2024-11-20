@@ -55,16 +55,25 @@
         <h2 class="carrosel-titulo">ÚLTIMOS LANÇAMENTOS</h2>
         <!-- Slider main container -->
         <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                ...
+                <div class="swiper-slide"><img src="assets/Guia Front-end.svg"
+                        alt="Livro de guia para Desenvolvedor Front-End"></div>
+                <div class="swiper-slide"><img src="assets/ApacheKafka.svg"
+                        alt="Livro sobre Apache Kafka da Alura Books"></div>
+                <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre Liderança"></div>
+                <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro sobre Portugol da Alura Books">
+                </div>
+                <div class="swiper-slide"><img src="assets/ReactNative.svg"
+                        alt="Livro sobre React Native da Alura Books"></div>
+                <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre Javascript"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+
 
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
@@ -77,6 +86,17 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bulets',
+            },
+        });
+    </script>
 </body>
 
 </html>

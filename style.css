@@ -137,4 +137,15 @@ body {
   background-color: var(--branco);
   padding: 20px 0 8px 0;
   text-transform: uppercase;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  display: none;
+}
+.swiper .swiper-pagination {
+  position: initial;
 }/*# sourceMappingURL=style.css.map */

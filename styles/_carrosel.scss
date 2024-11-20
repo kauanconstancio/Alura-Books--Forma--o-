@@ -10,3 +10,22 @@
         text-transform: uppercase;
     }
 }
+
+.swiper {
+    .swiper-wrapper {
+        .swiper-slide {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
+
+    .swiper-pagination{
+        position: initial;
+    }
+}
