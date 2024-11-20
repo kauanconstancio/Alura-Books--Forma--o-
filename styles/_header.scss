@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: var(--branco);
+    position: relative;
+
+    .left-actions {
+        display: flex;
+        gap: 24px;
+
+        input {
+            display: none;
+        }
+
+        .burguer-menu {
+            background-image: url(../assets/Menu.svg);
+            width: 48px;
+            height: 48px;
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        .lista-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 70%;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: var(--preto);
+                }
+            }
+
+            .menu-titulo {
+                a {
+                    color: var(--laranja);
+                    font-weight: 700;
+                }
+            }
+
+            .menu-link {
+                a {
+                    background: var(--azul-degrade);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .lista-menu,
+        .menu-item {
+            padding: 10px;
+            background-color: var(--branco);
+        }
+
+        .popup-menu:checked~.lista-menu {
+            display: block;
+        }
+    }
+
+    .right-btns {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .btn-content {
+        padding: 5px;
+        color: var(--azul);
+    }
+}

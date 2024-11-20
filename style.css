@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --cor-de-fundo: #EBECEE;
+  --branco: #fff;
+  --preto: #000;
+  --laranja: #EB9B00;
+  --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+  --azul: #002F52;
+  --fonte-principal: "Poppins";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-principal);
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background-color: var(--branco);
+  position: relative;
+}
+.header .left-actions {
+  display: flex;
+  gap: 24px;
+}
+.header .left-actions input {
+  display: none;
+}
+.header .left-actions .burguer-menu {
+  background-image: url(../assets/Menu.svg);
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.header .left-actions .lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 70%;
+}
+.header .left-actions .lista-menu li {
+  list-style: none;
+}
+.header .left-actions .lista-menu li a {
+  text-decoration: none;
+  color: var(--preto);
+}
+.header .left-actions .lista-menu .menu-titulo a {
+  color: var(--laranja);
+  font-weight: 700;
+}
+.header .left-actions .lista-menu .menu-link a {
+  background: var(--azul-degrade);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+.header .left-actions .lista-menu,
+.header .left-actions .menu-item {
+  padding: 10px;
+  background-color: var(--branco);
+}
+.header .left-actions .popup-menu:checked ~ .lista-menu {
+  display: block;
+}
+.header .right-btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header .btn-content {
+  padding: 5px;
+  color: var(--azul);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  color: var(--branco);
+  background: var(--azul-degrade);
+}
+.banner h2 {
+  margin: 32px 86px 0px 87px;
+  font-size: 18px;
+}
+.banner p {
+  margin: 8px 58px 0 54px;
+  font-weight: 500;
+}
+.banner .pesquisa input {
+  margin: 24px 0 32px;
+  width: 90vw;
+  padding: 10px 24px;
+  background-color: transparent;
+  border: 1px solid var(--branco);
+  border-radius: 24px;
+  color: var(--branco);
+}
+.banner .pesquisa ::-moz-placeholder {
+  color: var(--branco);
+  font-size: 14px;
+  text-align: center;
+  background: url(../assets/Pesquisa.svg);
+  background-repeat: no-repeat;
+  background-position: 1em;
+}
+.banner .pesquisa ::placeholder {
+  color: var(--branco);
+  font-size: 14px;
+  text-align: center;
+  background: url(../assets/Pesquisa.svg);
+  background-repeat: no-repeat;
+  background-position: 1em;
+}
+
+.carrosel .carrosel-titulo {
+  color: var(--laranja);
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  background-color: var(--branco);
+  padding: 20px 0 8px 0;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

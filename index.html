@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books (Formação Alura) </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-actions">
+            <input type="checkbox" id="menu" class="popup-menu">
+            <label for="menu">
+                <span class="burguer-menu btn-content"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="menu-item menu-titulo">
+                    <a href="#">Categorias</a>
+                </li>
+                <li class="menu-item menu-link">
+                    <a href="#">Programação</a>
+                </li>
+                <li class="menu-item menu-link">
+                    <a href="#">Front-End</a>
+                </li>
+                <li class="menu-item menu-link">
+                    <a href="#">Infraestrutura</a>
+                </li>
+                <li class="menu-item menu-link">
+                    <a href="#">Business</a>
+                </li>
+                <li class="menu-item menu-link">
+                    <a href="#">Design & UX</a>
+                </li>
+            </ul>
+            <img src="assets/Logo.svg" alt="Logo" class="btn-content">
+        </div>
+        <div class="right-btns">
+            <a href="#"><img src="assets/Favoritos.svg" alt="Favoritos" class="btn-content"></a>
+            <a href="#"><img src="assets/Sacola.svg" alt="Carrinho de Compras" class="btn-content"></a>
+            <a href="#"><img src="assets/Usuario.svg" alt="Perfil" class="btn-content"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2>Já sabe por onde começar?</h2>
+        <p>Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <div class="pesquisa">
+            <input type="text" placeholder="Qual será sua próxima leitura?">
+        </div>
+    </section>
+    <section class="carrosel">
+        <h2 class="carrosel-titulo">ÚLTIMOS LANÇAMENTOS</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
