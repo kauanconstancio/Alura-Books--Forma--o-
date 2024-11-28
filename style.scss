@@ -2,6 +2,7 @@
 
 :root{
     --cor-de-fundo: #EBECEE;
+    --fundo-secundario: #F9F9F9;
     --branco: #fff;
     --preto: #000;
     --laranja: #EB9B00;
@@ -36,3 +37,5 @@ li{
 @import "styles/carrosel";
 @import "styles/card";
 @import "styles/topicos";
+@import "styles/newsletter";
+@import "styles/rodape";
